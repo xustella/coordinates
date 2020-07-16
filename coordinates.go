@@ -15,7 +15,7 @@ func (c *Coordinates) SetLongitude(lon float64) error {
 	return nil
 }
 func (c *Coordinates) SetLatitude(lat float64) error {
-	if lat < -90 || lat > 90 {
+	if lat < -180 || lat > 180 {
 		return errors.New("Invalid latitude")
 	}
 	c.latitude = lat

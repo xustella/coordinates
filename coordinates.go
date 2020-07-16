@@ -21,3 +21,11 @@ func (c *Coordinates) SetLatitude(lat float64) error {
 	c.latitude = lat
 	return nil
 }
+
+//the getter methods:
+func (c *Coordinates) Longitude() float64 {
+	return c.longitude
+}
+func (c *Coordinates) Latitude() float64 {
+	return c.latitude
+}
